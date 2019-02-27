@@ -1,17 +1,17 @@
 import Foundation
 import CreateML
 
-let scheduleFile = Bundle.main.url(forResource: "NFL18", withExtension: "csv")!
+let scheduleFile = Bundle.main.url(forResource: "NFL18Updated", withExtension: "csv")!
 let dataTable = try MLDataTable(contentsOf: scheduleFile)
 
-let dataColumns = ["Winner/tie", "Loser/tie", "PtsW", "PtsL", "YdsW", "TOW", "YdsL", "TOL"]
+let dataColumns = ["Visitor", "Home", "PtsV", "PtsH", "YdsV", "TOV", "YdsH", "TOH"]
 let regressorTable = dataTable[dataColumns]
 let classifierTable = dataTable[dataColumns]
 
 let (regressorEvalTable, regressorTrainingTable) = regressorTable.randomSplit(by: 0.20, seed: 3)
 let (classifierEvalTable, classifierTrainingTable) = classifierTable.randomSplit(by: 0.25, seed: 6)
 
-let regressor = try MLRegressor(trainingData: regressorTrainingTable, targetColumn: "PtsW", featureColumns: dataColumns)
+let regressor = try MLRegressor(trainingData: regressorTrainingTable, targetColumn: "PtsH", featureColumns: dataColumns)
 
 let worstTrainingError = regressor.trainingMetrics.maximumError
 let worstValidationError = regressor.validationMetrics.maximumError
@@ -19,7 +19,7 @@ let worstValidationError = regressor.validationMetrics.maximumError
 let regressorEvaluation = regressor.evaluation(on: regressorEvalTable)
 let worstEvalError = regressorEvaluation.maximumError
 
-let classifier = try MLClassifier(trainingData: classifierTrainingTable, targetColumn: "Winner/tie", featureColumns: dataColumns)
+let classifier = try MLClassifier(trainingData: classifierTrainingTable, targetColumn: "Home", featureColumns: dataColumns)
 
 let trainingError = classifier.trainingMetrics.classificationError
 let trainingAccuracy = (1.0 - trainingError) * 100
