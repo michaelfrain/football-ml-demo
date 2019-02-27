@@ -14,6 +14,8 @@
 		D3B0694722157A5E00E88235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B0694522157A5E00E88235 /* LaunchScreen.storyboard */; };
 		D3B0695222157A5E00E88235 /* NFLPredictorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0695122157A5E00E88235 /* NFLPredictorTests.swift */; };
 		D3B0695D22157A5E00E88235 /* NFLPredictorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0695C22157A5E00E88235 /* NFLPredictorUITests.swift */; };
+		D3FFCA6E2226619300D13E40 /* ScoreRegressor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D3FFCA6D2226619300D13E40 /* ScoreRegressor.mlmodel */; };
+		D3FFCA702226619B00D13E40 /* TeamClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D3FFCA6F2226619B00D13E40 /* TeamClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D3B0695822157A5E00E88235 /* NFLPredictorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFLPredictorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B0695C22157A5E00E88235 /* NFLPredictorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLPredictorUITests.swift; sourceTree = "<group>"; };
 		D3B0695E22157A5E00E88235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3FFCA6D2226619300D13E40 /* ScoreRegressor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ScoreRegressor.mlmodel; sourceTree = "<group>"; };
+		D3FFCA6F2226619B00D13E40 /* TeamClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TeamClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		D3B0693B22157A5D00E88235 /* NFLPredictor */ = {
 			isa = PBXGroup;
 			children = (
+				D3FFCA6F2226619B00D13E40 /* TeamClassifier.mlmodel */,
+				D3FFCA6D2226619300D13E40 /* ScoreRegressor.mlmodel */,
 				D3B0693C22157A5D00E88235 /* AppDelegate.swift */,
 				D3B0693E22157A5D00E88235 /* ViewController.swift */,
 				D3B0694022157A5D00E88235 /* Main.storyboard */,
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B0693F22157A5D00E88235 /* ViewController.swift in Sources */,
+				D3FFCA6E2226619300D13E40 /* ScoreRegressor.mlmodel in Sources */,
+				D3FFCA702226619B00D13E40 /* TeamClassifier.mlmodel in Sources */,
 				D3B0693D22157A5D00E88235 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
