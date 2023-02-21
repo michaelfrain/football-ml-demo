@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3B0693D22157A5D00E88235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0693C22157A5D00E88235 /* AppDelegate.swift */; };
-		D3B0693F22157A5D00E88235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0693E22157A5D00E88235 /* ViewController.swift */; };
-		D3B0694222157A5D00E88235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B0694022157A5D00E88235 /* Main.storyboard */; };
+		D39CB7EF29A54BFA0003179A /* DataModel2023.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D39CB7EE29A54BF90003179A /* DataModel2023.mlmodel */; };
+		D39CB82929A550CA0003179A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39CB82829A550CA0003179A /* ContentView.swift */; };
+		D3B0693D22157A5D00E88235 /* NFLPredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0693C22157A5D00E88235 /* NFLPredictorApp.swift */; };
 		D3B0694422157A5E00E88235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B0694322157A5E00E88235 /* Assets.xcassets */; };
-		D3B0694722157A5E00E88235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B0694522157A5E00E88235 /* LaunchScreen.storyboard */; };
 		D3B0695222157A5E00E88235 /* NFLPredictorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0695122157A5E00E88235 /* NFLPredictorTests.swift */; };
 		D3B0695D22157A5E00E88235 /* NFLPredictorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0695C22157A5E00E88235 /* NFLPredictorUITests.swift */; };
-		D3FFCA6E2226619300D13E40 /* ScoreRegressor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D3FFCA6D2226619300D13E40 /* ScoreRegressor.mlmodel */; };
-		D3FFCA702226619B00D13E40 /* TeamClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D3FFCA6F2226619B00D13E40 /* TeamClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D39CB7EE29A54BF90003179A /* DataModel2023.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DataModel2023.mlmodel; sourceTree = "<group>"; };
+		D39CB82829A550CA0003179A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3B0693922157A5D00E88235 /* NFLPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFLPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3B0693C22157A5D00E88235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3B0693E22157A5D00E88235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D3B0694122157A5D00E88235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3B0693C22157A5D00E88235 /* NFLPredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLPredictorApp.swift; sourceTree = "<group>"; };
 		D3B0694322157A5E00E88235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D3B0694622157A5E00E88235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D3B0694822157A5E00E88235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3B0694D22157A5E00E88235 /* NFLPredictorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFLPredictorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B0695122157A5E00E88235 /* NFLPredictorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLPredictorTests.swift; sourceTree = "<group>"; };
 		D3B0695322157A5E00E88235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3B0695822157A5E00E88235 /* NFLPredictorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFLPredictorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B0695C22157A5E00E88235 /* NFLPredictorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLPredictorUITests.swift; sourceTree = "<group>"; };
 		D3B0695E22157A5E00E88235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3FFCA6D2226619300D13E40 /* ScoreRegressor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ScoreRegressor.mlmodel; sourceTree = "<group>"; };
-		D3FFCA6F2226619B00D13E40 /* TeamClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TeamClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +94,10 @@
 		D3B0693B22157A5D00E88235 /* NFLPredictor */ = {
 			isa = PBXGroup;
 			children = (
-				D3FFCA6F2226619B00D13E40 /* TeamClassifier.mlmodel */,
-				D3FFCA6D2226619300D13E40 /* ScoreRegressor.mlmodel */,
-				D3B0693C22157A5D00E88235 /* AppDelegate.swift */,
-				D3B0693E22157A5D00E88235 /* ViewController.swift */,
-				D3B0694022157A5D00E88235 /* Main.storyboard */,
+				D39CB7EE29A54BF90003179A /* DataModel2023.mlmodel */,
+				D3B0693C22157A5D00E88235 /* NFLPredictorApp.swift */,
 				D3B0694322157A5E00E88235 /* Assets.xcassets */,
-				D3B0694522157A5E00E88235 /* LaunchScreen.storyboard */,
-				D3B0694822157A5E00E88235 /* Info.plist */,
+				D39CB82829A550CA0003179A /* ContentView.swift */,
 			);
 			path = NFLPredictor;
 			sourceTree = "<group>";
@@ -235,9 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3B0694722157A5E00E88235 /* LaunchScreen.storyboard in Resources */,
 				D3B0694422157A5E00E88235 /* Assets.xcassets in Resources */,
-				D3B0694222157A5D00E88235 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3B0693F22157A5D00E88235 /* ViewController.swift in Sources */,
-				D3FFCA6E2226619300D13E40 /* ScoreRegressor.mlmodel in Sources */,
-				D3FFCA702226619B00D13E40 /* TeamClassifier.mlmodel in Sources */,
-				D3B0693D22157A5D00E88235 /* AppDelegate.swift in Sources */,
+				D3B0693D22157A5D00E88235 /* NFLPredictorApp.swift in Sources */,
+				D39CB7EF29A54BFA0003179A /* DataModel2023.mlmodel in Sources */,
+				D39CB82929A550CA0003179A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +285,6 @@
 			targetProxy = D3B0695922157A5E00E88235 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D3B0694022157A5D00E88235 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3B0694122157A5D00E88235 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D3B0694522157A5E00E88235 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3B0694622157A5E00E88235 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D3B0695F22157A5E00E88235 /* Debug */ = {
@@ -442,6 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NFLPredictor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NFLPredictor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
