@@ -9,18 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var homeTeam: Team = Team.defaultList[0]
+    @State private var visitingTeam: Team = Team.defaultList[0]
     @State private var yppDiff: String = ""
     @State private var turnoverDiff: String = ""
     @State private var firstDownDiff: String = ""
+    @State var presentingModal: Bool = false
+    
     var body: some View {
         VStack {
             HStack {
-                Button("Home Team") {
-                    
+                Picker("Select a home team", selection: $homeTeam) {
+                    ForEach(Team.defaultList, id: \.self) {
+                        Text($0.teamName)
+                    }
                 }
                 .padding()
-                Button("Visiting Team") {
-                    
+                Picker("Select a visiting team", selection: $visitingTeam) {
+                    ForEach(Team.defaultList, id: \.self) {
+                        Text($0.teamName)
+                    }
                 }
                 .padding()
             }
@@ -28,6 +36,14 @@ struct ContentView: View {
                 TextField("Yardage per play differential", text: $yppDiff)
                 TextField("Turnover differential", text: $turnoverDiff)
                 TextField("First down differential", text: $firstDownDiff)
+                Button("Predict!") {
+                    let predictor = Predictor(homeTeam: homeTeam, visitingTeam: visitingTeam, yppDiff: Double(yppDiff) ?? 0, turnoverDiff: Double(turnoverDiff) ?? 0, firstDownDiff: Double(firstDownDiff) ?? 0)
+                    let prediction = predictor.predictResult()
+                    
+                    print(prediction)
+                    print(Double(yppDiff))
+                    print(Double(firstDownDiff))
+                }
             }
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()

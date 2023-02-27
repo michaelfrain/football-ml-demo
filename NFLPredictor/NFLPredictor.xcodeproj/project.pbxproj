@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D39CB7EF29A54BFA0003179A /* DataModel2023.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D39CB7EE29A54BF90003179A /* DataModel2023.mlmodel */; };
 		D39CB82929A550CA0003179A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39CB82829A550CA0003179A /* ContentView.swift */; };
+		D39CB82D29AC22810003179A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39CB82C29AC22810003179A /* Team.swift */; };
+		D39CB82F29AC2DD10003179A /* PredictorModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D39CB82E29AC2DD10003179A /* PredictorModel.mlmodel */; };
+		D39CB83129AC2E2D0003179A /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39CB83029AC2E2D0003179A /* Predictor.swift */; };
+		D39CB83329AD00E20003179A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39CB83229AD00E20003179A /* ResultView.swift */; };
 		D3B0693D22157A5D00E88235 /* NFLPredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0693C22157A5D00E88235 /* NFLPredictorApp.swift */; };
 		D3B0694422157A5E00E88235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B0694322157A5E00E88235 /* Assets.xcassets */; };
 		D3B0695222157A5E00E88235 /* NFLPredictorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0695122157A5E00E88235 /* NFLPredictorTests.swift */; };
@@ -33,8 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D39CB7EE29A54BF90003179A /* DataModel2023.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DataModel2023.mlmodel; sourceTree = "<group>"; };
 		D39CB82829A550CA0003179A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D39CB82C29AC22810003179A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		D39CB82E29AC2DD10003179A /* PredictorModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PredictorModel.mlmodel; sourceTree = "<group>"; };
+		D39CB83029AC2E2D0003179A /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		D39CB83229AD00E20003179A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		D3B0693922157A5D00E88235 /* NFLPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFLPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B0693C22157A5D00E88235 /* NFLPredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLPredictorApp.swift; sourceTree = "<group>"; };
 		D3B0694322157A5E00E88235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,10 +100,13 @@
 		D3B0693B22157A5D00E88235 /* NFLPredictor */ = {
 			isa = PBXGroup;
 			children = (
-				D39CB7EE29A54BF90003179A /* DataModel2023.mlmodel */,
+				D39CB82E29AC2DD10003179A /* PredictorModel.mlmodel */,
 				D3B0693C22157A5D00E88235 /* NFLPredictorApp.swift */,
 				D3B0694322157A5E00E88235 /* Assets.xcassets */,
 				D39CB82829A550CA0003179A /* ContentView.swift */,
+				D39CB82C29AC22810003179A /* Team.swift */,
+				D39CB83029AC2E2D0003179A /* Predictor.swift */,
+				D39CB83229AD00E20003179A /* ResultView.swift */,
 			);
 			path = NFLPredictor;
 			sourceTree = "<group>";
@@ -249,9 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39CB82D29AC22810003179A /* Team.swift in Sources */,
 				D3B0693D22157A5D00E88235 /* NFLPredictorApp.swift in Sources */,
-				D39CB7EF29A54BFA0003179A /* DataModel2023.mlmodel in Sources */,
 				D39CB82929A550CA0003179A /* ContentView.swift in Sources */,
+				D39CB83129AC2E2D0003179A /* Predictor.swift in Sources */,
+				D39CB82F29AC2DD10003179A /* PredictorModel.mlmodel in Sources */,
+				D39CB83329AD00E20003179A /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
