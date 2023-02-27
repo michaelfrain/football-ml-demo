@@ -6,4 +6,16 @@
 //  Copyright © 2023 Michael Frain. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
+
+struct ResultView: View {
+    var homeTeam: String
+    var visitingTeam: String
+    var prediction: Double
+    
+    var body: some View {
+        Text("Home Team: \(homeTeam)")
+        Text("Visiting Team: \(visitingTeam)")
+        Text("Predicted point differential (positive is home win, negative is visitor win): \(prediction)")
+    }
+}

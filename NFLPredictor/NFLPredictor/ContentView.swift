@@ -9,12 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var presentingModal = false
+    @State var prediction: Double = 0
+    
     @State private var homeTeam: Team = Team.defaultList[0]
     @State private var visitingTeam: Team = Team.defaultList[0]
     @State private var yppDiff: String = ""
     @State private var turnoverDiff: String = ""
     @State private var firstDownDiff: String = ""
-    @State var presentingModal: Bool = false
     
     var body: some View {
         VStack {
@@ -38,11 +40,12 @@ struct ContentView: View {
                 TextField("First down differential", text: $firstDownDiff)
                 Button("Predict!") {
                     let predictor = Predictor(homeTeam: homeTeam, visitingTeam: visitingTeam, yppDiff: Double(yppDiff) ?? 0, turnoverDiff: Double(turnoverDiff) ?? 0, firstDownDiff: Double(firstDownDiff) ?? 0)
-                    let prediction = predictor.predictResult()
+                    self.prediction = predictor.predictResult()
                     
-                    print(prediction)
-                    print(Double(yppDiff))
-                    print(Double(firstDownDiff))
+                    self.presentingModal = true
+                }
+                .sheet(isPresented: $presentingModal) {
+                    ResultView(homeTeam: self.homeTeam.teamName, visitingTeam: self.visitingTeam.teamName, prediction: self.prediction)
                 }
             }
             .textFieldStyle(RoundedBorderTextFieldStyle())

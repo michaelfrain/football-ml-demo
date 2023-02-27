@@ -22,7 +22,10 @@ struct Predictor {
         let visitorInput = PredictorModelInput(Team: visitingTeam.teamName, YPP_Differential: yppDiff * -1, Turnover_Differential: turnoverDiff * -1, _1st_Down_Differential: firstDownDiff * -1)
         guard let visitorOutput = try? model.prediction(input: visitorInput) else { return 0 }
         
-        let prediction = (homeOutput.Point_Differential - visitorOutput.Point_Differential) / 2
+        let adjustedhomeDiff = homeOutput.Point_Differential + 0.23
+        let adjustedVisitorDiff = visitorOutput.Point_Differential - 0.23
+        
+        let prediction = (adjustedhomeDiff - adjustedVisitorDiff) / 2.0
             
         return prediction
     }
